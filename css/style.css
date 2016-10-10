@@ -1,0 +1,113 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 14px;
+  color: #505050;
+  margin: 5px;
+}
+
+h1{
+  color: #905050;
+  text-align: center;
+  font-size: 175%
+}
+
+h2{
+  position: absolute;
+  top: -15px;
+  right: -1px;
+  height: 30px;
+  width: 150px; 
+  border: 1px solid #000000;
+  text-transform: capitalize;
+  font-size: 125%;
+  text-align: right;
+  vertical-align: center;
+  padding: 5px;
+}
+
+#red {
+  background-color: #B05050;
+  color: #F0F0F0;
+}
+
+#blue {
+  background-color: #5050B0;
+  color: #F0F0F0;
+}
+
+#green {
+  background-color: #50A050;
+  color: #F0F0F0;
+}
+
+div{
+  margin: 0px;
+  padding: 0px;
+}
+
+div > div {
+  height: 250px;
+  padding: 0px;
+  margin: 0px;
+  float:left;
+}
+
+div > div > div {
+  border: 1px solid #000000;
+  background-color: #E0E0E0;
+  width: 96%;
+  height: 96%;
+  padding: 30px 10px 10px 10px;
+  position: relative;
+  margin: 2%;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/************** Responsive Framework - Desktop **************/
+@media (min-width: 992px){
+  .c1, .c2, .c3{
+    width: 33%;
+  }
+}
+
+/************** Responsive Framework - Tablet **************/
+@media (min-width: 768px) and (max-width: 991px){
+  .c1, .c2{
+    width: 50%;
+  }
+  .c3 {
+    width: 100%;
+  }
+
+  #c1 {
+    width: 94%;
+    margin-left: 4%
+  }
+
+  #c2 {
+    width: 94%;
+    margin-right: 4%
+  }
+
+  #c3 {
+    margin: 0%
+    width: 100%;
+  }
+}
+
+/************** Responsive Framework - Phone **************/
+@media (max-width: 767px){
+  .c1, .c2, .c3{
+    width: 100%;
+  }
+
+
